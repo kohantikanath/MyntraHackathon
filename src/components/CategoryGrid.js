@@ -5,10 +5,10 @@ import { useNavigation } from '@react-navigation/native';
 
 const categories = [
   { name: 'Bollywood', screen: 'BollywoodScreen', image: require('../../assets/images/bollywood.jpg') },
-  { name: 'Anime', screen: 'AnimeScreen', image: require('../../assets/images/bollywood.jpg') },
-  { name: 'K-pop', screen: 'KpopScreen', image: require('../../assets/images/bollywood.jpg') },
+  { name: 'Anime', screen: 'AnimeScreen', image: require('../../assets/images/anime.jpg') },
+  { name: 'K-pop', screen: 'KpopScreen', image: require('../../assets/images/k-pop.jpg') },
 //   { name: 'C-drama', screen: 'CdramaScreen', image: require('../../assets/images/k-drama.jpg') },
-  { name: 'Hollywood', screen: 'HollywoodScreen', image: require('../../assets/images/bollywood.jpg') },
+  { name: 'Hollywood', screen: 'HollywoodScreen', image: require('../../assets/images/hollywood.jpg') },
   { name: 'K-drama', screen: 'KdramaScreen', image: require('../../assets/images/k-drama.jpg') },
 ];
 
