@@ -4,12 +4,12 @@ import { View, Text, StyleSheet, TouchableOpacity, Image } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 
 const categories = [
-  { name: 'Bollywood', screen: 'BollywoodScreen', image: require('../../assets/images/bollywood-banner.png') },
-  { name: 'Anime', screen: 'AnimeScreen', image: require('../../assets/images/anime-banner.png') },
-  { name: 'K-pop', screen: 'KpopScreen', image: require('../../assets/images/kpop-banner.png') },
-  { name: 'C-drama', screen: 'CdramaScreen', image: require('../../assets/images/cdrama-banner.png') },
-  { name: 'Hollywood', screen: 'HollywoodScreen', image: require('../../assets/images/hollywood-banner.png') },
-  { name: 'K-drama', screen: 'KdramaScreen', image: require('../../assets/images/kdrama-banner.png') },
+  { name: 'Bollywood', screen: 'BollywoodScreen', image: require('../../assets/images/bollywood.jpg') },
+  { name: 'Anime', screen: 'AnimeScreen', image: require('../../assets/images/bollywood.jpg') },
+  { name: 'K-pop', screen: 'KpopScreen', image: require('../../assets/images/bollywood.jpg') },
+//   { name: 'C-drama', screen: 'CdramaScreen', image: require('../../assets/images/k-drama.jpg') },
+  { name: 'Hollywood', screen: 'HollywoodScreen', image: require('../../assets/images/bollywood.jpg') },
+  { name: 'K-drama', screen: 'KdramaScreen', image: require('../../assets/images/k-drama.jpg') },
 ];
 
 const CategoryGrid = () => {
