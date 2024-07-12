@@ -14,6 +14,7 @@ const ThemeSelectionScreen = () => {
       <SearchBar />
       <Text style={styles.caption}>Top Picks for You!</Text>
       <ImageCarousel />
+      <Text style={styles.caption}>Explore trendy trek!</Text>
       <CategoryGrid />
       {/* Rest of your screen content */}
     </View>

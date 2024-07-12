@@ -24,7 +24,7 @@ import ThemeSelectionScreen from '../screens/ThemeSelectionScreen';
 import BollywoodScreen from '../screens/BollywoodScreen';
 import AnimeScreen from '../screens/AnimeScreen';
 import KpopScreen from '../screens/KpopScreen';
-// import CdramaScreen from '../screens/CdramaScreen';
+import TollywoodScreen from '../screens/TollywoodScreen';
 import HollywoodScreen from '../screens/HollywoodScreen';
 import KdramaScreen from '../screens/KdramaScreen';
 
@@ -38,7 +38,7 @@ const AppNavigator = () => {
       <Stack.Screen name="BollywoodScreen" component={BollywoodScreen} />
       <Stack.Screen name="AnimeScreen" component={AnimeScreen} />
       <Stack.Screen name="KpopScreen" component={KpopScreen} />
-      {/* <Stack.Screen name="CdramaScreen" component={CdramaScreen} /> */}
+      <Stack.Screen name="TollywoodScreen" component={TollywoodScreen} />
       <Stack.Screen name="HollywoodScreen" component={HollywoodScreen} />
       <Stack.Screen name="KdramaScreen" component={KdramaScreen} />
     </Stack.Navigator>
