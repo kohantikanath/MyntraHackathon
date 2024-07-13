@@ -118,6 +118,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     backgroundColor: "#fff",
+    marginLeft: 19,
   },
   card: {
     width: screenWidth * 0.8,
