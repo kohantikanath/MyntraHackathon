@@ -13,7 +13,7 @@ import { FontAwesome } from "@expo/vector-icons";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer"; // Import the Footer component
 import Nav2 from "../components/Nav2";
-
+import HorizontalScrollingText from "../components/HorizontalScrollingText";
 const { width: screenWidth, height: screenHeight } = Dimensions.get("window");
 
 const images = [
@@ -57,9 +57,10 @@ const BollywoodScreen = () => {
   return (
     <View style={styles.container}>
       <NavBar />
-      <Text style={styles.caption}>
+      {/* <Text style={styles.caption}>
         Swipe your way through Bollywood fashion!
-      </Text>
+      </Text> */}
+      <HorizontalScrollingText />
       <Nav2 />
       <View style={styles.swiperContainer}>
         <Swiper
@@ -100,8 +101,7 @@ const BollywoodScreen = () => {
           <FontAwesome name="heart" size={30} color="red" />
         </Animated.View>
       </View>
-
-      <Footer /> 
+      <Footer />
     </View>
   );
 };
