@@ -1,4 +1,3 @@
-
 // src/screens/BollywoodScreen.js
 import React, { useState } from "react";
 import {
@@ -12,6 +11,7 @@ import {
 import Swiper from "react-native-deck-swiper";
 import { FontAwesome } from "@expo/vector-icons";
 import NavBar from "../components/NavBar";
+import Footer from "../components/Footer"; // Import the Footer component
 
 const { width: screenWidth, height: screenHeight } = Dimensions.get("window");
 
@@ -81,7 +81,7 @@ const BollywoodScreen = () => {
             { opacity: disliked },
           ]}
         >
-          <FontAwesome name="times" size={30} color="red" />
+          <FontAwesome name="times" size={30} color="brown" />
         </Animated.View>
         <Animated.View
           style={[styles.iconContainer, styles.likeIcon, { opacity: liked }]}
@@ -95,9 +95,10 @@ const BollywoodScreen = () => {
             { opacity: wishlist },
           ]}
         >
-          <FontAwesome name="heart" size={30} color="pink" />
+          <FontAwesome name="heart" size={30} color="red" />
         </Animated.View>
       </View>
+      <Footer /> 
     </View>
   );
 };
@@ -148,15 +149,15 @@ const styles = StyleSheet.create({
   },
   dislikeIcon: {
     top: 20,
-    left: 20,
+    right: 20, // Align to the right
   },
   likeIcon: {
     top: 20,
-    right: 20,
+    right: 80, // Adjust positioning as needed
   },
   wishlistIcon: {
     top: 20,
-    right: 20,
+    right: 140, // Adjust positioning as needed
   },
 });
 
