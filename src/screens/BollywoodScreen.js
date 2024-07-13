@@ -12,6 +12,7 @@ import Swiper from "react-native-deck-swiper";
 import { FontAwesome } from "@expo/vector-icons";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer"; // Import the Footer component
+import Nav2 from "../components/Nav2";
 
 const { width: screenWidth, height: screenHeight } = Dimensions.get("window");
 
@@ -59,6 +60,7 @@ const BollywoodScreen = () => {
       <Text style={styles.caption}>
         Swipe your way through Bollywood fashion!
       </Text>
+      <Nav2 />
       <View style={styles.swiperContainer}>
         <Swiper
           cards={images}
@@ -98,6 +100,7 @@ const BollywoodScreen = () => {
           <FontAwesome name="heart" size={30} color="red" />
         </Animated.View>
       </View>
+
       <Footer /> 
     </View>
   );
