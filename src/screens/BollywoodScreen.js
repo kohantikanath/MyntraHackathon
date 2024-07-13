@@ -16,12 +16,12 @@ import HorizontalScrollingText from "../components/HorizontalScrollingText";
 const { width: screenWidth, height: screenHeight } = Dimensions.get("window");
 
 const images = [
-  require("../../assets/Bollywood/image1.jpg"),
-  require("../../assets/Bollywood/image2.jpg"),
-  require("../../assets/Bollywood/image3.jpg"),
-  require("../../assets/Bollywood/image4.jpg"),
-  require("../../assets/Bollywood/image5.jpg"),
-  require("../../assets/Bollywood/image3.jpg"),
+  require("../../assets/Bollywood/image.png"),
+  require("../../assets/Bollywood/image22.png"),
+  require("../../assets/Bollywood/image33.png"),
+  require("../../assets/Bollywood/image.png"),
+  require("../../assets/Bollywood/image22.png"),
+  require("../../assets/Bollywood/image33.png"),
 ];
 
 const BollywoodScreen = () => {
