@@ -1,8 +1,6 @@
-// src/screens/BollywoodScreen.js
 import React, { useState } from "react";
 import {
   View,
-  Text,
   StyleSheet,
   Dimensions,
   Image,
@@ -14,6 +12,7 @@ import NavBar from "../components/NavBar";
 import Footer from "../components/Footer"; // Import the Footer component
 import Nav2 from "../components/Nav2";
 import HorizontalScrollingText from "../components/HorizontalScrollingText";
+
 const { width: screenWidth, height: screenHeight } = Dimensions.get("window");
 
 const images = [
@@ -57,9 +56,6 @@ const BollywoodScreen = () => {
   return (
     <View style={styles.container}>
       <NavBar />
-      {/* <Text style={styles.caption}>
-        Swipe your way through Bollywood fashion!
-      </Text> */}
       <HorizontalScrollingText />
       <Nav2 />
       <View style={styles.swiperContainer}>
@@ -74,7 +70,7 @@ const BollywoodScreen = () => {
           onSwipedRight={() => handleSwipe("right")}
           onSwipedTop={() => handleSwipe("top")}
           cardIndex={0}
-          backgroundColor={"#fff"} // Set background color to white
+          backgroundColor={"#fff"}
           stackSize={3}
         />
         <Animated.View
@@ -84,12 +80,12 @@ const BollywoodScreen = () => {
             { opacity: disliked },
           ]}
         >
-          <FontAwesome name="times" size={30} color="brown" />
+          <FontAwesome name="times" size={30} style={styles.icon} />
         </Animated.View>
         <Animated.View
           style={[styles.iconContainer, styles.likeIcon, { opacity: liked }]}
         >
-          <FontAwesome name="check" size={30} color="green" />
+          <FontAwesome name="check" size={30} style={styles.icon} />
         </Animated.View>
         <Animated.View
           style={[
@@ -98,7 +94,7 @@ const BollywoodScreen = () => {
             { opacity: wishlist },
           ]}
         >
-          <FontAwesome name="heart" size={30} color="red" />
+          <FontAwesome name="heart" size={30} style={styles.icon} />
         </Animated.View>
       </View>
       <Footer />
@@ -109,7 +105,7 @@ const BollywoodScreen = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff", // Set background color to white
+    backgroundColor: "#fff",
   },
   caption: {
     fontSize: 18,
@@ -121,7 +117,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "#fff", // Set background color to white
+    backgroundColor: "#fff",
   },
   card: {
     width: screenWidth * 0.8,
@@ -129,39 +125,51 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "#fff", // Set background color to white
+    backgroundColor: "#fff",
     shadowColor: "#000",
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.1,
     shadowRadius: 2,
     elevation: 3,
-    overflow: "hidden", // To ensure the image fits within the card
-    // marginLeft: screenWidth * 0.1, // Shift card to the right
+    overflow: "hidden",
   },
   image: {
     width: "100%",
     height: "100%",
     borderRadius: 10,
-    marginLeft: 10, // Shift image to the right
+    marginLeft: 10,
   },
   iconContainer: {
     position: "absolute",
     top: "50%",
     left: "50%",
     transform: [{ translateX: -15 }, { translateY: -15 }],
+    width: 50,
+    height: 50,
+    borderRadius: 25,
+    justifyContent: "center",
+    alignItems: "center",
   },
   dislikeIcon: {
     top: 20,
-    right: 20, // Align to the right
+    right: 20,
+    // backgroundColor: "#ff6b6b",
+    backgroundColor: "brown",
   },
   likeIcon: {
     top: 20,
-    right: 80, // Adjust positioning as needed
+    right: 80,
+    backgroundColor: "#4ECDC4",
   },
   wishlistIcon: {
     top: 20,
-    right: 140, // Adjust positioning as needed
+    right: 140,
+    backgroundColor: "#FC5C65",
+  },
+  icon: {
+    color: "white",
   },
 });
 
 export default BollywoodScreen;
+
