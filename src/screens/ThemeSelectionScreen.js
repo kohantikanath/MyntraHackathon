@@ -1,23 +1,29 @@
-//src/screens/ThemeSelectionScreen.js
+// //src/screens/ThemeSelectionScreen.js
 import React from 'react';
-// import { View, StyleSheet } from 'react-native';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet, ScrollView, SafeAreaView, Dimensions } from 'react-native';
 import NavBar from '../components/NavBar';
 import SearchBar from '../components/SearchBar';
 import ImageCarousel from '../components/ImageCarousel';
 import CategoryGrid from '../components/CategoryGrid';
 
+const { width } = Dimensions.get('window');
+
 const ThemeSelectionScreen = () => {
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
       <NavBar />
-      <SearchBar />
-      <Text style={styles.caption}>Top Picks for You!</Text>
-      <ImageCarousel />
-      <Text style={styles.caption}>Explore trendy trek!</Text>
-      <CategoryGrid />
-      {/* Rest of your screen content */}
-    </View>
+      <ScrollView 
+        contentContainerStyle={styles.scrollContent}
+        showsVerticalScrollIndicator={false}
+      >
+        <SearchBar />
+        <Text style={styles.caption}>Top Picks for You!</Text>
+        <ImageCarousel />
+        <Text style={styles.caption}>Explore trendy trek!</Text>
+        <CategoryGrid />
+        {/* Add more components or content here as needed */}
+      </ScrollView>
+    </SafeAreaView>
   );
 };
 
@@ -26,15 +32,21 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#FFF',
   },
+  scrollContent: {
+    flexGrow: 1,
+    paddingBottom: 20, // Add some padding at the bottom
+  },
   caption: {
-    fontSize: 18,
+    fontSize: width * 0.045, // Responsive font size
     fontWeight: 'bold',
     textAlign: 'center',
-    marginVertical: 10,
-    backgroundColor: 'rgba(255, 192, 203, 0.3)', // Light pink tint background
-    padding: 5,
-    borderRadius: 5,
-    // fontFamily: '', // Change font to something more attractive
+    marginVertical: width * 0.025, // Responsive vertical margin
+    backgroundColor: 'rgba(255, 192, 203, 0.3)',
+    padding: width * 0.0125, // Responsive padding
+    borderRadius: width * 0.0125, // Responsive border radius
+    width: '90%', // Take up most of the width
+    alignSelf: 'center', // Center the caption
   },
 });
+
 export default ThemeSelectionScreen;
