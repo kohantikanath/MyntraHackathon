@@ -5,7 +5,8 @@ import { FontAwesome } from "@expo/vector-icons";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer"; // Import the Footer component
 import Nav2 from "../components/Nav2";
-import HorizontalScrollingText from "../components/HorizontalScrollingText";
+// import HorizontalScrollingText from "../components/HorizontalScrollingText";
+import KdramaHorizontalScroll from "../components/KdramaHorizontalScroll";
 
 const { width: screenWidth, height: screenHeight } = Dimensions.get("window");
 
@@ -52,7 +53,7 @@ const KdramaScreen = () => {
   return (
     <View style={styles.container}>
       <NavBar />
-      <HorizontalScrollingText />
+      <KdramaHorizontalScroll />
       <Nav2 />
       <View style={styles.swiperContainer}>
         <Swiper
