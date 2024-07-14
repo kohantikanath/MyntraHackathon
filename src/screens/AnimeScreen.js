@@ -166,4 +166,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default AnimeScreenScreen;
+export default AnimeScreen;
