@@ -4,7 +4,7 @@ import Swiper from "react-native-deck-swiper";
 import { FontAwesome } from "@expo/vector-icons";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer"; // Import the Footer component
-// import Nav2 from "../components/Nav2";
+import Nav2 from "../components/Nav2";
 import HorizontalScrollingText from "../components/HorizontalScrollingText";
 
 const { width: screenWidth, height: screenHeight } = Dimensions.get("window");
@@ -51,7 +51,7 @@ const BollywoodScreen = () => {
     <View style={styles.container}>
       <NavBar />
       <HorizontalScrollingText />
-      {/* <Nav2 /> */}
+      <Nav2 />
       <View style={styles.swiperContainer}>
         <Swiper
           cards={images}
