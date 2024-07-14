@@ -1,20 +1,19 @@
-//src/component/Nav2
 import React from "react";
 import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
 import { FontAwesomeIcon } from "@fortawesome/react-native-fontawesome";
 import { faSort, faFilter } from "@fortawesome/free-solid-svg-icons";
 
-const Footer2 = () => {
+const Nav2 = () => {
   return (
     <View style={styles.container}>
       <TouchableOpacity style={styles.iconContainer}>
-        <FontAwesomeIcon icon={faSort} size={24} />
+        <FontAwesomeIcon icon={faSort} size={24} style={styles.icon} />
         <Text style={styles.label}>SORT</Text>
       </TouchableOpacity>
       {/* Vertical line */}
       <View style={styles.verticalLine} />
       <TouchableOpacity style={styles.iconContainer}>
-        <FontAwesomeIcon icon={faFilter} size={24} />
+        <FontAwesomeIcon icon={faFilter} size={24} style={styles.icon} />
         <Text style={styles.label}>FILTER</Text>
       </TouchableOpacity>
     </View>
@@ -45,6 +44,9 @@ const styles = StyleSheet.create({
     width: 1,
     backgroundColor: "#E0E0E0",
   },
+  icon: {
+    color: "#A9A9A9", // Light grey color
+  },
 });
 
-export default Footer2;
+export default Nav2;
