@@ -45,7 +45,7 @@ const KpopScreen = () => {
     }
   };
 
-  console.log("Rendering HollywoodScreen");
+  console.log("Rendering HollywoodScreen j");
 
   return (
     <View style={styles.container}>
