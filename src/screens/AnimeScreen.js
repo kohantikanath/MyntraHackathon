@@ -10,12 +10,13 @@ import HorizontalScrollingText from "../components/HorizontalScrollingText";
 const { width: screenWidth, height: screenHeight } = Dimensions.get("window");
 
 const images = [
-  require("../../assets/Bollywood/image.png"),
-  require("../../assets/Bollywood/image22.png"),
-  require("../../assets/Bollywood/image33.png"),
-  require("../../assets/Bollywood/image.png"),
-  require("../../assets/Bollywood/image22.png"),
-  require("../../assets/Bollywood/image33.png"),
+  require("../../assets/Anime/image1.png"),
+  require("../../assets/Anime/image2.png"),
+  require("../../assets/Anime/image3.png"),
+  require("../../assets/Anime/image4.png"),
+  require("../../assets/Anime/image5.png"),
+  require("../../assets/Anime/image6.png"),
+  require("../../assets/Anime/image7.png"),
 ];
 
 const AnimeScreen = () => {
@@ -132,7 +133,7 @@ const styles = StyleSheet.create({
     width: "100%",
     height: "100%",
     borderRadius: 10,
-    marginLeft: 10,
+    // marginLeft: 10,
   },
   iconContainer: {
     position: "absolute",
