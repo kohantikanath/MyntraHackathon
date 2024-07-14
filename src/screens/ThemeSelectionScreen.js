@@ -5,7 +5,7 @@ import NavBar from '../components/NavBar';
 import SearchBar from '../components/SearchBar';
 import ImageCarousel from '../components/ImageCarousel';
 import CategoryGrid from '../components/CategoryGrid';
-// import Footer from '../components/Footer';
+import Footer from '../components/Footer';
 
 const { width } = Dimensions.get('window');
 
@@ -24,7 +24,7 @@ const ThemeSelectionScreen = () => {
         <CategoryGrid />
         {/* Add more components or content here as needed */}
       </ScrollView>
-      {/* <Footer /> */}
+      <Footer />
     </SafeAreaView>
   );
 };
