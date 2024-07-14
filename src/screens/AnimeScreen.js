@@ -11,7 +11,7 @@ const { width: screenWidth, height: screenHeight } = Dimensions.get("window");
 
 const images = [
   require("../../assets/Anime/image1.png"),
-  require("../../assets/Anime/image2.png"),
+  // require("../../assets/Anime/image2.png"),
   require("../../assets/Anime/image3.png"),
   require("../../assets/Anime/image4.png"),
   require("../../assets/Anime/image5.png"),

@@ -5,17 +5,32 @@ import { FontAwesome } from "@expo/vector-icons";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer"; // Import the Footer component
 import Nav2 from "../components/Nav2";
+<<<<<<< HEAD
 import KdramaHoriZontalScroll from "../components/KdramaHorizontalScroll";
+=======
+import HorizontalScrollingText from "../components/HorizontalScrollingText";
+>>>>>>> e011b93 (K-dramaScreen-Done)
 
 const { width: screenWidth, height: screenHeight } = Dimensions.get("window");
 
 const images = [
+<<<<<<< HEAD
   require("../../assets/Bollywood/image.png"),
   require("../../assets/Bollywood/image22.png"),
   require("../../assets/Bollywood/image33.png"),
   require("../../assets/Bollywood/image.png"),
   require("../../assets/Bollywood/image22.png"),
   require("../../assets/Bollywood/image33.png"),
+=======
+  require("../../assets/Kdrama/image1 (2).png"),
+  require("../../assets/Kdrama/image4.png"),
+  require("../../assets/Kdrama/image2.png"),
+  require("../../assets/Kdrama/image7'.png"),
+  require("../../assets/Kdrama/image3.png"),
+  require("../../assets/Kdrama/image5.png"),
+  require("../../assets/Kdrama/image6.png"),
+//   require("../../assets/Kdrama/image7'.png"),
+>>>>>>> e011b93 (K-dramaScreen-Done)
 ];
 
 const KdramaScreen = () => {
@@ -50,7 +65,11 @@ const KdramaScreen = () => {
   return (
     <View style={styles.container}>
       <NavBar />
+<<<<<<< HEAD
       <KdramaHoriZontalScroll />
+=======
+      <HorizontalScrollingText />
+>>>>>>> e011b93 (K-dramaScreen-Done)
       <Nav2 />
       <View style={styles.swiperContainer}>
         <Swiper
@@ -132,6 +151,10 @@ const styles = StyleSheet.create({
     width: "100%",
     height: "100%",
     borderRadius: 10,
+<<<<<<< HEAD
+=======
+    // marginLeft: 10,
+>>>>>>> e011b93 (K-dramaScreen-Done)
   },
   iconContainer: {
     position: "absolute",

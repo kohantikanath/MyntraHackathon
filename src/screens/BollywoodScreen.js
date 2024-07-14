@@ -10,12 +10,14 @@ import HorizontalScrollingText from "../components/HorizontalScrollingText";
 const { width: screenWidth, height: screenHeight } = Dimensions.get("window");
 
 const images = [
-  require("../../assets/Bollywood/image.png"),
-  require("../../assets/Bollywood/image22.png"),
-  require("../../assets/Bollywood/image33.png"),
-  require("../../assets/Bollywood/image.png"),
-  require("../../assets/Bollywood/image22.png"),
-  require("../../assets/Bollywood/image33.png"),
+  require("../../assets/Bbollywood/image1.png"),
+  require("../../assets/Bbollywood/image3.png"),
+  require("../../assets/Bbollywood/image2.png"),
+  require("../../assets/Bbollywood/image4.png"),
+  require("../../assets/Bbollywood/image5.png"),
+  require("../../assets/Bbollywood/image6.png"),
+  require("../../assets/Bbollywood/image7.png"),
+  require("../../assets/Bbollywood/image8.png"),
 ];
 
 const BollywoodScreen = () => {
