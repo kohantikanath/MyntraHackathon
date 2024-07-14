@@ -1,11 +1,5 @@
 import React, { useState } from "react";
-import {
-  View,
-  StyleSheet,
-  Dimensions,
-  Image,
-  Animated,
-} from "react-native";
+import { View, StyleSheet, Dimensions, Image, Animated } from "react-native";
 import Swiper from "react-native-deck-swiper";
 import { FontAwesome } from "@expo/vector-icons";
 import NavBar from "../components/NavBar";
@@ -173,4 +167,3 @@ const styles = StyleSheet.create({
 });
 
 export default BollywoodScreen;
-
