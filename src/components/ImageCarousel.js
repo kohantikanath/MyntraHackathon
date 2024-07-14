@@ -2,10 +2,10 @@ import React, { useState, useEffect } from 'react';
 import { View, Image, StyleSheet } from 'react-native';
 
 const images = [
-  require('../../assets/ThemeSelection/bollywood1.png'),
-  require('../../assets/ThemeSelection/bollywood2.png'),
   require('../../assets/ThemeSelection/kpop.png'),
+  require('../../assets/ThemeSelection/bollywood1.png'),
   require('../../assets/ThemeSelection/kdrama.png'),
+  require('../../assets/ThemeSelection/bollywood2.png'),
   // Add more images as needed
 ];
 
@@ -15,7 +15,7 @@ const ImageCarousel = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 4000); // Change image every 4 seconds
+    }, 2000); // Change image every 4 seconds
 
     return () => clearInterval(interval);
   }, []);
