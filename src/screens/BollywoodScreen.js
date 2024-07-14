@@ -3,7 +3,7 @@ import { View, StyleSheet, Dimensions, Image, Animated } from "react-native";
 import Swiper from "react-native-deck-swiper";
 import { FontAwesome } from "@expo/vector-icons";
 import NavBar from "../components/NavBar";
-import Footer from "../components/Footer"; // Import the Footer component
+// import Footer from "../components/Footer"; // Import the Footer component
 import Nav2 from "../components/Nav2";
 import HorizontalScrollingText from "../components/HorizontalScrollingText";
 
@@ -91,7 +91,7 @@ const BollywoodScreen = () => {
           <FontAwesome name="heart" size={30} style={styles.icon} />
         </Animated.View>
       </View>
-      <Footer />
+      {/* <Footer /> */}
     </View>
   );
 };
