@@ -76,9 +76,11 @@ const styles = StyleSheet.create({
     alignItems: "center",
     backgroundColor: "#FFF",
     marginBottom: screenWidth * 0.05,
+    
     borderWidth: 1,
     borderColor: "#ccc",
-    paddingTop: screenWidth * 0.02,
+    paddingTop: screenWidth * 0.03,
+    paddingBottom:screenWidth * 0.02,
     padding: screenWidth * 0.02,
     borderRadius: screenWidth * 0.015,
     shadowColor: "#000",
