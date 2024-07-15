@@ -17,7 +17,7 @@ const categories = [
     image: require("../../assets/images/anime.jpeg"),
   },
   {
-    name: "K-pop",
+    name: "K-Pop",
     screen: "KpopScreen",
     image: require("../../assets/images/k-pop.jpg"),
   },
@@ -27,7 +27,7 @@ const categories = [
     image: require("../../assets/images/hollywood.jpg"),
   },
   {
-    name: "K-drama",
+    name: "K-Drama",
     screen: "KdramaScreen",
     image: require("../../assets/images/k-drama.jpg"),
   },
@@ -78,6 +78,7 @@ const styles = StyleSheet.create({
     marginBottom: screenWidth * 0.05,
     borderWidth: 1,
     borderColor: "#ccc",
+    paddingTop: screenWidth * 0.02,
     padding: screenWidth * 0.02,
     borderRadius: screenWidth * 0.015,
     shadowColor: "#000",
