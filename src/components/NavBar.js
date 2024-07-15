@@ -103,11 +103,18 @@
 
 // src/components/NavBar.js
 // src/components/NavBar.js
-// src/components/NavBar.js
 import React from "react";
 import { View, Text, StyleSheet, TouchableOpacity, Image } from "react-native";
 import { FontAwesomeIcon } from "@fortawesome/react-native-fontawesome";
-import { faHeart as faHeartRegular, faBell as faBellRegular, faAngleDown } from "@fortawesome/free-solid-svg-icons";
+import {
+  faHeart,
+  faBell,
+  faAngleDown,
+} from "@fortawesome/free-solid-svg-icons";
+import {
+  faHeart as faHeartRegular,
+  faBell as faBellRegular,
+} from "@fortawesome/free-regular-svg-icons";
 import { useNavigation } from "@react-navigation/native"; // Import navigation hook
 import ShoppingBagIcon from "../../assets/shopping_bag.png"; // Adjust the path as per your project structure
 
@@ -115,13 +122,16 @@ const NavBar = () => {
   const navigation = useNavigation(); // Access navigation object
 
   const handleLogoPress = () => {
-    navigation.navigate('ThemeSelection'); // Navigate to ThemeSelectionScreen
+    navigation.navigate("ThemeSelection"); // Navigate to ThemeSelectionScreen
   };
 
   return (
     <View style={styles.container}>
       <View style={styles.leftSection}>
-        <TouchableOpacity style={styles.logoContainer} onPress={handleLogoPress}>
+        <TouchableOpacity
+          style={styles.logoContainer}
+          onPress={handleLogoPress}
+        >
           <Text style={styles.logo}>Myntra</Text>
           <FontAwesomeIcon
             icon={faAngleDown}
