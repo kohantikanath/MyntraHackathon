@@ -148,7 +148,7 @@ const NavBar = () => {
 
 const styles = StyleSheet.create({
   container: {
-    marginTop: 23,
+    // marginTop: 23,
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",

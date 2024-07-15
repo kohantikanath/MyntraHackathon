@@ -12,13 +12,12 @@ const { width: screenWidth, height: screenHeight } = Dimensions.get("window");
 
 const images = [
   require("../../assets/Kdrama/image1 (2).png"),
+  require("../../assets/Kdrama/kdrama2.png"),
   require("../../assets/Kdrama/image4.png"),
+  require("../../assets/Kdrama/k-drama1.png"),
   require("../../assets/Kdrama/image2.png"),
-  require("../../assets/Kdrama/image7'.png"),
-  require("../../assets/Kdrama/image3.png"),
   require("../../assets/Kdrama/image5.png"),
-  require("../../assets/Kdrama/image6.png"),
-//   require("../../assets/Kdrama/image7'.png"),
+  require("../../assets/Kdrama/image7'.png"),
 ];
 
 const KdramaScreen = () => {
