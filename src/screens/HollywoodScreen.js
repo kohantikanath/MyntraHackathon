@@ -10,12 +10,13 @@ import HollywoodHoriZontalScroll from "../components/HollywoodHorizontalScroll";
 const { width: screenWidth, height: screenHeight } = Dimensions.get("window");
 
 const images = [
-  require("../../assets/Bollywood/image.png"),
-  require("../../assets/Bollywood/image22.png"),
-  require("../../assets/Bollywood/image33.png"),
-  require("../../assets/Bollywood/image.png"),
-  require("../../assets/Bollywood/image22.png"),
-  require("../../assets/Bollywood/image33.png"),
+  require("../../assets/Hollywood/image1.png"),
+  require("../../assets/Hollywood/image3.png"),
+  require("../../assets/Hollywood/image4.png"),
+  require("../../assets/Hollywood/image5.png"),
+  require("../../assets/Hollywood/image6.png"),
+  require("../../assets/Hollywood/image7.png"),
+  require("../../assets/Hollywood/image8.png"),
 ];
 
 const HollywoodScreen = () => {
