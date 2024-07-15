@@ -1,4 +1,3 @@
-// //src/screens/ThemeSelectionScreen.js
 import React from 'react';
 import { View, Text, StyleSheet, ScrollView, SafeAreaView, Dimensions } from 'react-native';
 import NavBar from '../components/NavBar';
