@@ -6,6 +6,8 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import { faHeart, faBell, faShoppingBag, faAngleDown } from '@fortawesome/free-solid-svg-icons';
 
 library.add(faHeart, faBell, faShoppingBag, faAngleDown);
+// library.add(faHeart, faBell, faShoppingBag, faAngleDown);
+
 
 export default function App() {
   return (
