@@ -52,8 +52,8 @@ npx react-native run-android
 - Xcode (for iOS development)
 - Android Studio (for Android development)
 
-## Demo
-https://drive.google.com/file/d/1xYaeX6-bUDoFttCFWsxVe-CieA8cM2dO/view?usp=sharing
+
+[Demo Video](https://drive.google.com/file/d/1xYaeX6-bUDoFttCFWsxVe-CieA8cM2dO/view?usp=sharing)
 
 ## Screenshot
 <img src="https://github.com/user-attachments/assets/be8ea092-f4e0-4a94-af74-484c7b1e4e88" alt="image" width="400" />
